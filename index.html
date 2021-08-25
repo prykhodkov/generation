@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Main</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
@@ -36,8 +36,7 @@
                     <div class="top__subtitle">Вступ до нашої школи</div>
                     <h1 class="top__title">ПРИЄДНУЙСЯ ДО НАС!</h1>
                     <div class="top__text">Розвиваємо необхідні навики успішних та активних дітей</div>
-                    <button class="button button_default">залишити запит</button>
-                    <div class="top__arrow"><img src="dist/img/top-arrow.svg" alt="" width="100%"></div>
+                    <button class="button button_default modal-toggle">залишити запит</button>
                 </div>
 
                 <div class="top__img"><img src="dist/img/top.png" alt="" width="100%"></div>
@@ -48,7 +47,8 @@
     <section class="motivation">
         <div class="container">
             <h2 class="main__title">НАША ФІЛОСОФІЯ</h2>
-            <h3 class="main__subtitle">Мотивація учнів - одна з найактуальніших та найгостіших проблем сучасної освіти.</h3>
+            <h3 class="main__subtitle">Мотивація учнів - одна з найактуальніших та найгостіших проблем сучасної
+                освіти.</h3>
 
             <div class="motivation__grid">
                 <div class="motivation__img"><img src="dist/img/motivation.png" alt="" width="100%"></div>
@@ -102,7 +102,9 @@
                                 <div class="organisation-point__info">
                                     Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах є необхідне обладнання для проведення лабораторних та практичних робіт з хімії, фізики, біології.
                                 </div>
-                                <div class="organisation-point__img"><img src="dist/img/org-demo.svg" alt="" width="100%"></div>
+                                <div class="organisation-point__img">
+                                    <img src="dist/img/org_1.png" alt="" width="100%">
+                                </div>
                             </div>
                         </div>
 
@@ -111,25 +113,37 @@
                                 <div class="organisation-point__info">
                                     Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах є необхідне обладнання для проведення лабораторних та практичних робіт з хімії, фізики, біології.
                                 </div>
-                                <div class="organisation-point__img"><img src="dist/img/org-demo.svg" alt="" width="100%"></div>
+                                <div class="organisation-point__img">
+                                    <img src="dist/img/org_2.png" alt="" width="100%">
+                                </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="organisation-point">
                                 <div class="organisation-point__info">
-                                    Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах є необхідне обладнання для проведення лабораторних та практичних робіт з хімії, фізики, біології.
+                                    Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним
+                                    обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах
+                                    є необхідне обладнання для проведення лабораторних та практичних робіт з хімії,
+                                    фізики, біології.
                                 </div>
-                                <div class="organisation-point__img"><img src="dist/img/org-demo.svg" alt="" width="100%"></div>
+                                <div class="organisation-point__img">
+                                    <img src="dist/img/org_3.png" alt="" width="100%">
+                                </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="organisation-point">
                                 <div class="organisation-point__info">
-                                    Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах є необхідне обладнання для проведення лабораторних та практичних робіт з хімії, фізики, біології.
+                                    Кожний кабінет закріплений за певним класом, та обладнаний сучасним інтерактивним
+                                    обладнанням. Максимальна кількість учнів у кожній групі - 8. Окрім того, в кабінетах
+                                    є необхідне обладнання для проведення лабораторних та практичних робіт з хімії,
+                                    фізики, біології.
                                 </div>
-                                <div class="organisation-point__img"><img src="dist/img/org-demo.svg" alt="" width="100%"></div>
+                                <div class="organisation-point__img">
+                                    <img src="dist/img/org_4.png" alt="" width="100%">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,25 +185,182 @@
         </div>
     </section>
 
-    <section class="schedule">
+    <section class="additional">
         <div class="container">
-            <div class="schedule__grid">
-                <div class="schedule__img"><img src="dist/img/schedule.png" alt="" width="100%"></div>
+            <div class="additional__grid">
+                <div class="additional__img"><img src="dist/img/schedule.png" alt="" width="100%"></div>
 
-                <div class="schedule__info">
-                    <div class="schedule__text">
+                <div class="additional__info">
+                    <div class="additional__text">
                         За один навчальний день учні вивчають матеріал з трьох предметів - різних за видами діяльності. Такий формат дає можливість продуктивніше вивчати тему від початку до кінця, використовуючи при цьому навчальні підходи, що передбачають активну участь школярів у освітньому процесі.
                     </div>
-
-                    <button class="button button_default">подивитись розклад</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="schedule">
+        <div class="container">
+            <h2 class="main__title">НАВЧАЛЬНИЙ ТИЖДЕНЬ</h2>
+            <h3 class="main__subtitle">Розклад занять 1-го класу</h3>
+
+            <div class="schedule__grid">
+                <div class="schedule__carousel swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="schedule__table table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>ПОНЕДІЛОК</th>
+                                        <th>ВІВТОРОК</th>
+                                        <th>СЕРЕДА</th>
+                                        <th>ЧЕТВЕР</th>
+                                        <th>П’ЯТНИЦЯ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9:30 - 11:00</td>
+                                        <td>English</td>
+                                        <td>Moral science (курс етики англійскою мовою)</td>
+                                        <td>English</td>
+                                        <td>Science &Technology (курс укр мовою)</td>
+                                        <td>Тімбілдинг та командні ігри</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:15 - 12:45</td>
+                                        <td>Математика</td>
+                                        <td>Українська мова</td>
+                                        <td>Літературне читання</td>
+                                        <td>Країнознавство</td>
+                                        <td>Програмув./ веб-дизайн/ відеомонтаж</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:30 - 14:30</td>
+                                        <td>Арт-терапія</td>
+                                        <td>Математика (ребуси та задачі на логіку)</td>
+                                        <td>Математика</td>
+                                        <td>Історія</td>
+                                        <td>Заняття з тьютором</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <table class="schedule__table table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ПОНЕДІЛОК</th>
+                                    <th>ВІВТОРОК</th>
+                                    <th>СЕРЕДА</th>
+                                    <th>ЧЕТВЕР</th>
+                                    <th>П’ЯТНИЦЯ</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>9:30 - 11:00</td>
+                                    <td>English</td>
+                                    <td>Moral science (курс етики англійскою мовою)</td>
+                                    <td>English</td>
+                                    <td>Science &Technology (курс укр мовою)</td>
+                                    <td>Тімбілдинг та командні ігри</td>
+                                </tr>
+                                <tr>
+                                    <td>11:15 - 12:45</td>
+                                    <td>Математика</td>
+                                    <td>Українська мова</td>
+                                    <td>Літературне читання</td>
+                                    <td>Країнознавство</td>
+                                    <td>Програмув./ веб-дизайн/ відеомонтаж</td>
+                                </tr>
+                                <tr>
+                                    <td>13:30 - 14:30</td>
+                                    <td>Арт-терапія</td>
+                                    <td>Математика (ребуси та задачі на логіку)</td>
+                                    <td>Математика</td>
+                                    <td>Історія</td>
+                                    <td>Заняття з тьютором</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <table class="schedule__table table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ПОНЕДІЛОК</th>
+                                    <th>ВІВТОРОК</th>
+                                    <th>СЕРЕДА</th>
+                                    <th>ЧЕТВЕР</th>
+                                    <th>П’ЯТНИЦЯ</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>9:30 - 11:00</td>
+                                    <td>English</td>
+                                    <td>Moral science (курс етики англійскою мовою)</td>
+                                    <td>English</td>
+                                    <td>Science &Technology (курс укр мовою)</td>
+                                    <td>Тімбілдинг та командні ігри</td>
+                                </tr>
+                                <tr>
+                                    <td>11:15 - 12:45</td>
+                                    <td>Математика</td>
+                                    <td>Українська мова</td>
+                                    <td>Літературне читання</td>
+                                    <td>Країнознавство</td>
+                                    <td>Програмув./ веб-дизайн/ відеомонтаж</td>
+                                </tr>
+                                <tr>
+                                    <td>13:30 - 14:30</td>
+                                    <td>Арт-терапія</td>
+                                    <td>Математика (ребуси та задачі на логіку)</td>
+                                    <td>Математика</td>
+                                    <td>Історія</td>
+                                    <td>Заняття з тьютором</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="young">
+        <div class="container">
+            <h2 class="main__title">МОЛОДША ШКОЛА, ОСНОВНІ ФУНКЦІЇ</h2>
+
+            <div class="young__grid">
+                <div class="young__info">
+                    <div class="young__text">
+                        Навчання в сучасній початковій школі це не про запам‘ятовування величезних обсягів інформації, а про формування навичок, які обов’язково знадобляться протягом життя. Такими важливими навичками є не лише читання, письмо, лічба, а й критичне мислення, вміння чітко та послідовно висловлювати свої думки, вміння організувати свій час та своє робоче місце, навички самообслуговування, емпатія та досвід творчої діяльності. Проте, для цього зовсім не потрібно намагатись всадити дитину за шкільну парту та змушувати її годинами писати у прописах, читати книжки зі шкільної програми тощо.
+                    </div>
+                </div>
+
+                <div class="young__img"><img src="dist/img/young.png" alt="" width="100%"></div>
+            </div>
+
+            <a href="#" class="arrow-link">
+                <span class="label">Дізнатися більше</span>
+                <img src="dist/img/arrow-right.svg" alt="" width="100%" class="arrow">
+            </a>
+        </div>
+    </section>
+
     <section class="system">
         <div class="container">
-            <h2 class="main__title">СИСТЕМА  МОТИВАЦІЇ ТА КОНТРОЛЬ ЗНАНЬ</h2>
+            <h2 class="main__title">СИСТЕМА МОТИВАЦІЇ ТА КОНТРОЛЬ ЗНАНЬ</h2>
 
             <div class="system__grid">
                 <div class="system__row system__row_1">
@@ -247,47 +418,32 @@
     <section class="roadmap">
         <div class="container">
             <h2 class="main__title">ВСТУП ДО НАШОЇ ШКОЛИ</h2>
-            <div class="roadmap__label">Шість простих кроків</div>
+            <div class="roadmap__label">Три простих кроки</div>
 
             <div class="roadmap__grid">
-                <div class="roadmap__column roadmap__column_1">
-                    <div class="roadmap-item">
-                        <div class="roadmap-item__number">1</div>
-                        <div class="roadmap-item__info">Ознайомитися з філософією нашої школи та цінностями, умовами навчання</div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__icon">
+                        <img src="dist/img/roadmap_1.svg" alt="">
                     </div>
-
-                    <div class="roadmap-item roadmap-item_3">
-                        <div class="roadmap-item__number">3</div>
-                        <div class="roadmap-item__info">Проаналізувати чи підходить Вашій дитині наш формат навчання та ознайомитися з документами</div>
-                    </div>
-
-                    <div class="roadmap-item">
-                        <div class="roadmap-item__number">5</div>
-                        <div class="roadmap-item__info">Пройти співбесіду учня та батьків з психологом</div>
-                    </div>
+                    <div class="roadmap-item__info">Знайомство з філософією школи</div>
                 </div>
 
-                <div class="roadmap__arrow"><img src="dist/img/roadmap.svg" alt="" height="100%"></div>
-
-                <div class="roadmap__column roadmap__column_2">
-                    <div class="roadmap-item">
-                        <div class="roadmap-item__number">2</div>
-                        <div class="roadmap-item__info">Відвідати пробний день</div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__icon">
+                        <img src="dist/img/roadmap_2.svg" alt="">
                     </div>
+                    <div class="roadmap-item__info">Відвідування пробного дня</div>
+                </div>
 
-                    <div class="roadmap-item">
-                        <div class="roadmap-item__number">4</div>
-                        <div class="roadmap-item__info">Прийняти рішення про вступ</div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__icon">
+                        <img src="dist/img/roadmap_3.svg" alt="">
                     </div>
-
-                    <div class="roadmap-item">
-                        <div class="roadmap-item__number">6</div>
-                        <div class="roadmap-item__info">Підписати угоду про навчання</div>
-                    </div>
+                    <div class="roadmap-item__info">Співбесіда учня <br>та батьків з нашим психологом</div>
                 </div>
             </div>
 
-            <button class="button button_default">залишити запит</button>
+            <button class="button button_default modal-toggle">залишити запит</button>
         </div>
     </section>
 
@@ -326,52 +482,49 @@
     </div>
 </footer>
 
-<div class="menu-mob">
-    <div class="menu-mob__grid">
-        <div class="menu-mob__head">
-            <div class="menu-mob__title">MENU</div>
-            <div class="menu-mob__close"><img src="dist/img/cross.svg" alt="" width="100%"></div>
+<div class="modal">
+    <div class="modal__overlay modal-toggle"></div>
+    <div class="modal__wrapper">
+        <div class="modal__close modal-toggle">
+            <svg width="100%" height="100%" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path fill="#9580D2" d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path></svg>
         </div>
 
-        <div class="menu-mob__body">
-            <div class="menu-mob__body-list">
-                <div class="collapse">
-                    <div class="collapse__head open">
-                        <span>MENU</span>
-                        <div class="arrow">
-                            <svg viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 31L1 16L16 1" stroke="white" stroke-width="3" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="collapse__body open">
-                        <a href="#home" class="link anchor-link">HOME</a>
-                        <a href="#about" class="link anchor-link">ABOUT</a>
-                        <a href="#articles" class="link anchor-link">ARTICLES</a>
-                    </div>
-                </div>
+        <div class="form">
+            <div class="form__group">
+                <input type="text" id="name" name="name" class="input-field" placeholder="Ваше ім’я">
+            </div>
 
-                <div class="collapse">
-                    <div class="collapse__head open">
-                        <span>CONTACTS</span>
-                        <div class="arrow">
-                            <svg viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 31L1 16L16 1" stroke="white" stroke-width="3" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+            <div class="form__group">
+                <input type="text" id="phone" name="phone" class="input-field" placeholder="Номер телефону">
+            </div>
+
+            <div class="form__group">
+                <div class="select">
+                    <div class="select__head">
+                        <div class="title">До якого класу?</div>
+                        <div class="arrow"><img src="dist/img/select_arrow.svg" alt="" width="100%"></div>
                     </div>
-                    <div class="collapse__body open">
-                        <a href="tel:+380978674" class="link">+380978674</a>
-                        <a href="mailto:email@gmail.com" class="link">email@gmail.com</a>
+
+                    <div class="select__body">
+                        <div class="select__list">
+                            <div class="item">1</div>
+                            <div class="item">2</div>
+                            <div class="item">3</div>
+                            <div class="item">4</div>
+                            <div class="item">5</div>
+                            <div class="item">6</div>
+                            <div class="item">7</div>
+                            <div class="item">8</div>
+                            <div class="item">9</div>
+                            <div class="item">10</div>
+                            <div class="item">11</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="menu-mob__body-socials">
-                <a href="#" class="link"><img src="dist/img/facebook_icon.svg" alt="" width="100%"></a>
-                <a href="#" class="link"><img src="dist/img/instagram_icon.svg" alt="" width="100%"></a>
-                <a href="#" class="link"><img src="dist/img/youtube_icon.svg" alt="" width="100%"></a>
-            </div>
+            <button class="button button_default modal-toggle" id="form_submit">залишити запит</button>
+            <div id="form_error"></div>
         </div>
     </div>
 </div>
