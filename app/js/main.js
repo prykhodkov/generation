@@ -1,20 +1,3 @@
-$('.collapse__head').click(function(e) {
-    e.preventDefault();
-
-    var $this = $(this);
-    if ($this.next().hasClass('open')) {
-        $this.next().removeClass('open');
-        $this.next().slideUp(350);
-        $this.toggleClass('open');
-    } else {
-        $this.parent().find('.collapse__body').removeClass('open');
-        $this.parent().find('.collapse__body').slideUp(350);
-        $this.toggleClass('open');
-        $this.next().toggleClass('open');
-        $this.next().slideToggle(350);
-    }
-});
-
 var menu = ['Навчальні кабінети', 'Вільний простір', 'Фізична активність', 'Харчування']
 var carouselArticles = new Swiper('.organisation__carousel', {
     loop: true,
@@ -25,6 +8,9 @@ var carouselArticles = new Swiper('.organisation__carousel', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
+            if ($(window).width() < 992) {
+                return '<span class="' + className + '"></span>';
+            }
             return '<span class="' + className + '">' + (menu[index]) + '</span>';
         },
     },
@@ -49,14 +35,9 @@ var carouselSchedule = new Swiper('.schedule__carousel', {
 });
 
 $('.header__toggle').click(function() {
-    $('.menu-mob').addClass('open');
+    $('.header__menu').toggleClass('open');
     $('body').addClass('lock');
 });
-
-$('.menu-mob__close').click(function() {
-    $('.menu-mob').removeClass('open');
-    $('body').removeClass('lock');
-})
 
 $('.menu-mob .link').click(function() {
     $('.menu-mob').removeClass('open');
