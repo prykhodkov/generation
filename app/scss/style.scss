@@ -1454,6 +1454,11 @@ body {
     width: 100%;
     max-width: 528px;
     margin: 0 auto 84px;
+
+    @media only screen and (max-width: 991px) {
+      max-width: 240px;
+      margin: 0 auto 42px;
+    }
   }
 
   &__grid {
@@ -1468,6 +1473,21 @@ body {
 
     &:not(:first-child) {
       margin-top: 90px;
+
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+        margin-top: 36px;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column-reverse;
+      max-width: 519px;
+      margin: 0 auto;
     }
   }
 
@@ -1479,6 +1499,7 @@ body {
     line-height: 32px;
 
     p {
+      margin-top: 0;
       margin-bottom: 0;
 
       &:not(:first-child) {
@@ -1488,9 +1509,17 @@ body {
   }
 
   &__img {
+    overflow: hidden;
     width: 100%;
     max-width: 519px;
     margin-right: 3%;
+    border-radius: 42px;
+
+    @media only screen and (max-width: 991px) {
+      margin-right: 0;
+      margin-bottom: 36px;
+      border-radius: 0;
+    }
   }
 
   &__list {
@@ -1501,6 +1530,18 @@ body {
     width: 100%;
     max-width: 519px;
     margin-left: 3%;
+
+    @media only screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      justify-content: center;
+      grid-gap: 24px;
+    }
   }
 
   .format-card {
@@ -1525,6 +1566,19 @@ body {
       line-height: 26px;
       color: $white;
     }
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      max-width: 250px;
+      min-height: 250px;
+      margin: 0 auto;
+      padding: 44px 24px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 60px;
+    margin-bottom: 82px;
   }
 }
 //format-full
