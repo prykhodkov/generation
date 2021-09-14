@@ -36,12 +36,10 @@ var carouselSchedule = new Swiper('.schedule__carousel', {
 
 $('.header__toggle').click(function() {
     $('.header__menu').toggleClass('open');
-    $('body').addClass('lock');
 });
 
-$('.menu-mob .link').click(function() {
-    $('.menu-mob').removeClass('open');
-    $('body').removeClass('lock');
+$('.header__menu .anchor-link').click(function() {
+    $('.header__menu').removeClass('open');
 })
 
 $(document).ready(function(){
@@ -50,7 +48,7 @@ $(document).ready(function(){
         var target = this.hash;
         var $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top - 80
         }, 900, 'swing', function () {});
     });
 });
@@ -67,7 +65,7 @@ $('.select > .select__head').on('click', function(e) {
     e.stopPropagation();
     var $this = $(this);
 
-    $this.next().addClass('open');
+    $this.next().toggleClass('open');
 });
 
 $('.select__body .item').on('click', function(e) {
